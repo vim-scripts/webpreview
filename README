@@ -1,0 +1,29 @@
+This is a mirror of http://www.vim.org/scripts/script.php?script_id=2119
+
+support preview edit pages in outer web browser, included file types like php,html,jsp and so on.
+You can just give a  browser, web server  in .vimrc like :
+" let g:Default_WebBrowser='c:\Program Files\Maxthon2\Maxthon.exe'
+" let g:Second_WebBrowser=''
+" let g:Default_WebDomain='http://weiye.cn'
+" let g:Default_WebRoot='D:/www' 
+
+Or give a server list  and browser list like:
+" let g:WebList = [
+"            \ {'domain' : 'http:// * .blog.weiye.cn','rootdir' : 'D:/www/blog/ * '},
+"            \ {'domain' : 'http://blog.weiye.cn','rootdir' : 'D:/www/blog'},
+"            \ {'domain' : 'http://weiye.cn','rootdir' : 'D:/www'},
+"            \ {'domain' : 'http://aa.bb.cn','rootdir' : 'ftp://user@192.168.202.110/www/xx'}
+"            \ ]
+
+" let g:BrowserList = {
+"            &#039default' : 'c:\Program Files\Maxthonsecond\Maxthon.exe' ,
+"            &#039second'  : 'c:\Program Files\Mozilla Firefox\firefox.exe' ,
+"            &#039ie'      : 'c:\Program Files\Internet Explorer\iexplore.exe' ,
+"            &#039ff'      : 'c:\Program Files\Mozilla Firefox\firefox.exe' 
+"            \}
+
+support wildcard * in server list.support remote ftp server.
+In default, use ",bd" to preview the current edited page in the default web browsers and ",bs" in the second web 
+server.
+Read the webpreview.vim document for more details 
+
